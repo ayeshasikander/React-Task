@@ -3,7 +3,7 @@ import React , {useState} from 'react'
 import noteContext from './noteContext'
 
 
-const NoteState = (props) => {
+const noteState = (props) => {
     const s1 = {
         "name" : 'Ali',
         "class" : 'BSCS'
@@ -32,4 +32,4 @@ const NoteState = (props) => {
 
 
 
-export default NoteState
+export default noteState

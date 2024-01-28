@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Header from "./components/Header.jsx";
-import App from './App.jsx';
-import Q3 from './pages/Q3.jsx';
-import Hooks from './pages/Hooks.jsx';
-import NoteState from './context/notes/NoteState.jsx';
-import ContextAPI from './pages/ContextAPI.jsx'
+import Header from "./components/Header";
+import App from './App';
+import Q3 from './pages/Q3';
+import Hooks from './pages/Hooks';
+import noteState from './Context/notes/noteState';
+import ContextAPI from './pages/ContextAPI'
 import './index.css';
 import {
   BrowserRouter,
@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
-    <NoteState>
+    <noteState>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -28,6 +28,6 @@ root.render(
           <Route exact path='/react-hooks' element={<Hooks />} />
         </Routes>
       </BrowserRouter>
-    </NoteState>
+    </noteState>
   </React.StrictMode>,
 );
