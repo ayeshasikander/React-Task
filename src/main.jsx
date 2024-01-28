@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import App from './App';
 import Q3 from './pages/Q3';
 import Hooks from './pages/Hooks';
-import noteState from './Context/notes/noteState';
+import NoteState from './Context/notes/NoteState';
 import ContextAPI from './pages/ContextAPI'
 import './index.css';
 import {
@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
-    <noteState>
+    <NoteState>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -28,6 +28,6 @@ root.render(
           <Route exact path='/react-hooks' element={<Hooks />} />
         </Routes>
       </BrowserRouter>
-    </noteState>
+    </NoteState>
   </React.StrictMode>,
 );
